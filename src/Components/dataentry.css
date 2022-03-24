@@ -1,90 +1,126 @@
-.container12 {
+.container1 {
+    /* top: 0; */
     width: 100vw;
-    height: 130vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    background: url('./Login/login-background.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    align-items: flex-start;
-    background-size: cover;
+    height: 100vh;
+    /* background-color: wheat; */
+    /* background: linear-gradient(60deg, var(--blue) 0%, var(--black) 100%); */
+    background: url(./login-background.jpeg);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    overflow-y: hidden;
 }
 
 .data-entry {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    position: relative;
+    top: 4rem;
     width: 80%;
     margin: auto;
+    height: 100%;
+    margin-top: -4rem;
 }
 
-.container12 .data-entry .form {
-    width: 40vw;
+.loginpage {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
     margin: auto;
-    min-height: 700px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
+    /* background-color: aqua; */
     justify-content: center;
-    border-radius: 10px;
-    padding: 20px;
-    backdrop-filter: "blur(10px)";
-    opacity: 0.8;
+    align-items: flex-end;
 }
 
-.col-md-3,
+.col-md-3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.form {
+    color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    max-width: 40%;
+    min-height: 70%;
+    padding: 30px 50px;
+    justify-content: center;
+    /* background-color: aliceblue; */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur('10px');
+    border-radius: 20px;
+    align-items: flex-start;
+    box-shadow: 10px 10px 10px 0 black;
+}
+
 .mb-3 {
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
 }
 
+.m2 {
+    margin-top: 2rem;
+}
+
+.headinglogreg {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+.form-control,
 .form-select {
-    padding: 10px;
-    width: 90%;
-    height: 3rem;
+    padding: 10px 20px;
+    font-size: 0.8rem;
 }
 
-.mb-3 input {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    width: 90%;
-    height: 3rem;
-    border: none;
-    background: #9a9ba8;
-    border-radius: 0.3rem;
+.btns {
+    width: 100%;
+}
+
+.btns button {
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background: var(--blue);
+    border: 1px solid var(--orange);
+    border-radius: 20px;
+}
+
+.btns button a {
+    color: white;
+    text-decoration: none;
+}
+
+.btns button:hover a {
+    color: var(--orange);
+}
+
+.btns button:hover {
+    transition: all .3s ease;
+    color: var(--orange);
+    background-color: white;
+    border: 1px solid var(--blue);
 }
 
 .form-check {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    text-align: center;
 }
 
-.form-check input {
-    width: 15px;
-    margin-right: 10px;
+.form-check-label {
+    margin: 1rem 1rem 1rem 2rem;
 }
 
-.btn-primary {
-    background: linear-gradient(to right, #14163c 0%, #03217b 79%);
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    width: 65%;
-    height: 3rem;
-    border: none;
-    color: white;
-    border-radius: 2rem;
-    cursor: pointer;
-}
-
-.btns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.orword {
+    font-size: 1rem;
 }

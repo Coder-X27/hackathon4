@@ -49,8 +49,6 @@
     color: var(--orange);
 }
 
-.animation {}
-
 .heading {
     color: var(--blue);
     font-weight: bold;
@@ -88,6 +86,16 @@ p {
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+}
+
+.home-buttons button a {
+    text-decoration: none;
+    color: white;
+}
+
+.home-buttons button:hover a {
+    transition: all .3s ease;
+    color: var(--blue);
 }
 
 .home-buttons button:hover {

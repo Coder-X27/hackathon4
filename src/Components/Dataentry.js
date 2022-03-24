@@ -11,8 +11,6 @@ export default function Dataentry() {
         // year: "",
         capacity: "",
         production: "",
-        capacityU: "",
-        imports: "",
         exports: "",
         month:"",
     })
@@ -47,11 +45,11 @@ export default function Dataentry() {
 
     return (
         <>
-            <div className="container12 my-5">
+            <div className="container1 ">
                 <div className='data-entry'>
                     <div className="form">
                         {console.log("User", user)}
-                        <h1>Enter your Company's Production Data</h1>
+                        <h1 className=''>Enter your Company's Production Data</h1>
                         <div className="col-md-3">
                             <label for="validationDefault04" class="form-label">Group of Various Petrochemicals</label>
                             <select className="form-select" id="validationDefault04" onChange={handleChange} name="type" value={user.type} required>
@@ -93,14 +91,6 @@ export default function Dataentry() {
                             <input type="text" className="form-control" placeholder='Enter Production' name="production" value={user.production} onChange={handleChange} />
                         </div>
                         <div className='mb-3'>
-                            <label for="exampleInputPassword1" class="form-label">Enter Capacity Utilisation</label>
-                            <input type="text" className="form-control" placeholder='Enter Capacity Utilisation' name="capacityU" value={user.capacityU} onChange={handleChange} />
-                        </div>
-                        <div className='mb-3'>
-                            <label for="exampleInputPassword1" class="form-label">Enter Imports</label>
-                            <input type="text" className="form-control" placeholder='Enter Imports' name="imports" value={user.imports} onChange={handleChange} />
-                        </div>
-                        <div className='mb-3'>
                             <label for="exampleInputPassword1" class="form-label">Enter Exports</label>
                             <input type="text" className="form-control" placeholder='Enter Exports' name="exports" value={user.exports} onChange={handleChange} />
                         </div>
@@ -110,10 +100,12 @@ export default function Dataentry() {
                         </div>
                         <div className='btns'>
                             <button type="submit" class="btn-primary" onClick={feed}>Submit</button>
+                            <button type="submit" class="btn-primary col-md-3"> <a href="/main">LogOut</a></button>
                         </div>
                         {/* <button type="submit" class="btn btn-primary" onClick={() => history.push("/login")}>Login</button> */}
                     </div>
                 </div>
+
             </div>
         </>
     )

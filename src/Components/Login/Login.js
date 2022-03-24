@@ -62,7 +62,7 @@ export default function Login({ setLoginUser }) {
               />
             </div>
             <br />
-            <div className="btns">
+            <div className="btns m2">
               <button type="submit" className="btn-primary" onClick={login}>
                 Login
               </button>

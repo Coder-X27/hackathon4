@@ -42,7 +42,7 @@ export default function Register() {
       <div className="loginpage">
           <div className="form">
         {console.log("User", user)}
-        <h1>Register Your Company</h1>
+        <h1 className='headinglogreg'>Register Your Company</h1>
         <div className='mb-3'>
           <label for="exampleInputEmail1" class="form-label">Company's Name</label>
           <input type="text" className="form-control" placeholder='Enter your Name' name="name" value={user.name} onChange={handleChange} />
@@ -69,7 +69,7 @@ export default function Register() {
 
         <div className="btns">
         <button type="submit" class="btn-primary" onClick={register}>Register</button>
-        <div>or</div>
+        <div className='orword'>or</div>
         <button type="submit" class="btn-primary" onClick={() => history.push("/login")}>Login</button>
 
       </div>

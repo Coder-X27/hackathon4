@@ -41,23 +41,22 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-          <Navbar style={{backgroundColor: 'black',
-        opacity: 0.8}} />
-            {
-              user && user._id ? <Dataentry /> : <Login setLoginUser={setLoginUser} />
-            }
+            {/* <Navbar/> */}
+              {
+                user && user._id ? <Dataentry /> : <Login setLoginUser={setLoginUser} />
+              }
           </Route>
           <Route path="/login">
-          <Navbar style={{backgroundColor: 'black',opacity: 0.9}} />
+            <Navbar/>
             <Login setLoginUser={setLoginUser} />
           </Route>
           <Route path="/register">
-          <Navbar style={{backgroundColor: 'black',opacity: 0.9}}/>
+            <Navbar />
             <Register />
           </Route>
           <Route path="/main">
             <div className="App" >
-              <Navbar style={{background: 'linear-gradient(60deg, var(--black) 0%, var(--blue) 100%)'}} />
+              <Navbar  />
               <Home />
               <Services />
               <About />
@@ -65,7 +64,6 @@ function App() {
               <Footer />
             </div>;
           </Route>
-
         </Switch>
       </Router>
 

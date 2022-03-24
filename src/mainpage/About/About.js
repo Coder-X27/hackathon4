@@ -6,7 +6,7 @@ class About extends Component {
         return (
             <div id="About" className="about-container">
                 <h1 className="heading">About <span>Us</span> </h1>
-                <p>Our team consists of six maestros who perfectly compliment each other. <br /><br /><b>1.) </b> A Full Stack Developer Jay Bhavsar. <br /><b>2.) </b> Frontend Developers Karan Sharma and Khushi Garg <br /><b>3.) </b> A Web Techno Content Writer and PR Khushi Soni. <br /><b>4.) </b> A UI/UX Developer Mayank Rohilla <br /><b>5.) </b> A Graphic designer Nishant Munshi. <br /><br /> The thing which brought us together is our equivalent dedication.The trust which our college have showered, make us more optimistic and enthusiastic. The kind of brainstorming, researching, implementing and cross checking which we did for weeks has already make us exceptional.</p>
+                <p> <b> Our team consists of six maestros who perfectly compliment each other.  The thing which brought us together is our equivalent dedication.The trust which our college have showered, make us more optimistic and enthusiastic. The kind of brainstorming, researching, implementing and cross checking which we did for weeks has already make us exceptional.</b></p>
                 <div className="about-team">
                     <div className="team-members">
                         <img src='https://media-exp1.licdn.com/dms/image/C4E03AQH5Cu3RwH7ngg/profile-displayphoto-shrink_400_400/0/1640112391508?e=1653523200&v=beta&t=EdRHczu5_USv5even_reE2RkKqGvwF4Iu6V1oBMEhYc' alt="" />
