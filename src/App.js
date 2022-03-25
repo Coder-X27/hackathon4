@@ -11,6 +11,7 @@ import Home from './mainpage/Home/Home';
 import Services from './mainpage/Services/Services'
 import About from './mainpage/About/About'
 import Contact from './mainpage/Contact/Contact'
+import Future from './mainpage/Future/Future'
 // import axios from 'axios';
 import {
   BrowserRouter as Router,
@@ -41,7 +42,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            {/* <Navbar/> */}
+            <Navbar/>
               {
                 user && user._id ? <Dataentry /> : <Login setLoginUser={setLoginUser} />
               }
@@ -60,9 +61,10 @@ function App() {
               <Home />
               <Services />
               <About />
+              <Future/>
               <Contact />
               <Footer />
-            </div>;
+            </div>
           </Route>
         </Switch>
       </Router>

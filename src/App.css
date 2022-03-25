@@ -18,3 +18,9 @@
     --black-light: rgba(41, 50, 65, 0.8);
     --blue-light: rgba(29, 53, 87, 0.8);
 }
+
+.app {
+    width: 100%;
+    height: 100vh;
+    background-color: wheat;
+}

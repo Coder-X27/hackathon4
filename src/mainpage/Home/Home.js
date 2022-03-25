@@ -10,7 +10,7 @@ class Home extends Component {
             <div className="animation">
                 <div className="social-icons resp1">
                     <a href="#" target='_blank' class="home_social_icon"><i class="uil uil-facebook-f"></i></a>
-                    <a href="#" target='_blank' class="home_social_icon"><i class="uil uil-github-alt"></i></a>
+                    <a href="#" target='_blank' class="home_social_icon"><i class="uil uil-twitter-alt"></i></a>
                     <a href="#" target='_blank' class="home_social_icon"><i class="uil uil-linkedin-alt"></i></a>
                 </div>
                 {/* <img src="https://thumbs.dreamstime.com/b/chemical-petrochemical-processing-plant-heavy-industry-stylized-vector-symbol-design-elements-emblem-127797723.jpg" alt="" />  */}
@@ -33,7 +33,7 @@ class Home extends Component {
             </div>
             <div className="social-icons resp2">
                 <a href="#" target='_blank' class="home_social_icon"><i class="uil uil-facebook-f"></i></a>
-                <a href="#" target='_blank' class="home_social_icon"><i class="uil uil-github"></i></a>
+                <a href="#" target='_blank' class="home_social_icon"><i class="uil uil-twitter"></i></a>
                 <a href="#" target='_blank' class="home_social_icon"><i class="uil uil-linkedin-alt"></i></a>
             </div>
         </section>

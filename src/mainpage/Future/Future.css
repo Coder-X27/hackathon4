@@ -1,0 +1,52 @@
+.future-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.future {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.future-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.f-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    margin: 1rem auto;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 20px 30px;
+    box-shadow: 5px 5px 5px 0 black;
+}
+
+.f-card:hover {
+    box-shadow: 0 0 0 0;
+    transition: all .5s ease;
+}
+
+.f-img {
+    width: 200px;
+}
+
+.f-img1 {
+    width: 377px
+}
+
+.f-heading {
+    margin-bottom: 1rem;
+}
