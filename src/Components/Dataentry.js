@@ -94,14 +94,19 @@ export default function Dataentry() {
                             <label for="exampleInputPassword1" class="form-label">Enter Exports</label>
                             <input type="text" className="form-control" placeholder='Enter Exports' name="exports" value={user.exports} onChange={handleChange} />
                         </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Upload Digital Signature</label>
+                            <input class="form-control-btn" type="file" className="form-control"/>
+                        </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <label class="form-check-label" for="exampleCheck1">I hereby declare that the data entered is accurate and correct</label>
                         </div>
                         <div className='btns'>
                             <button type="submit" class="btn-primary" onClick={feed}>Submit</button>
                             <button type="submit" class="btn-primary col-md-3"> <a href="/main">LogOut</a></button>
                         </div>
+
                         {/* <button type="submit" class="btn btn-primary" onClick={() => history.push("/login")}>Login</button> */}
                     </div>
                 </div>
