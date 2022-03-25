@@ -10,6 +10,7 @@ export default function Register() {
     email: "",
     password: "",
     reEnterPassword: "",
+    RegisterationNO:"",
   })
   const handleChange = e => {
     const { name, value } = e.target
@@ -21,8 +22,8 @@ export default function Register() {
 
   const register = () => {
     console.log("jay")
-    const { name, email, password, reEnterPassword } = user
-    if (name && email && password && (password === reEnterPassword)) {
+    const { name, email, password, reEnterPassword,RegistrationNO } = user
+    if (name && email && password&&RegistrationNO && (password === reEnterPassword)) {
       alert("posted")
       axios.post("http://localhost:9002/register", user)
         .then(res => console.log(res))
@@ -61,6 +62,12 @@ export default function Register() {
           <label for="exampleInputPassword1" class="form-label">Re-Enter Password</label>
           <input type="password" className="form-control" placeholder='Re-Enter your password' name="reEnterPassword" value={user.reEnterPassword} onChange={handleChange} />
         </div>
+        
+        <div className='mb-3'>
+          <label for="exampleInputPassword1" class="form-label">Registration Number</label>
+          <input type="text" className="form-control" placeholder='Registration No.' name="RegisterationNO" value={user.RegisterationNO} onChange={handleChange} />
+        </div>
+
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
