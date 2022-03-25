@@ -49,10 +49,11 @@ export default function Dataentry() {
                 <div className='data-entry'>
                     <div className="form">
                         {console.log("User", user)}
-                        <h1 className=''>Enter your Company's Production Data</h1>
+                        <h1 className='heading1'>Enter your Company's Production Data</h1>
                         <div className="col-md-3">
                             <label for="validationDefault04" class="form-label">Group of Various Petrochemicals</label>
                             <select className="form-select" id="validationDefault04" onChange={handleChange} name="type" value={user.type} required>
+                                <option>Type</option>
                                 <option>Synthetic Fibres/Yarn</option>
                                 <option>Polymers</option>
                                 <option >Synthetic Rubber</option>
@@ -68,6 +69,7 @@ export default function Dataentry() {
                         <div className="col-md-3">
                             <label for="validationDefault04" class="form-label">Month</label>
                             <select className="form-select" id="validationDefault04" onChange={handleChange} name="month" value={user.month} required>
+                                <option>Month</option>
                                 <option>Janaury</option>
                                 <option>Febuary</option>
                                 <option >March</option>
@@ -83,7 +85,7 @@ export default function Dataentry() {
                             </select>
                         </div>
                         <div className='mb-3'>
-                            <label for="exampleInputEmail1" class="form-label">Enter Capacity</label>
+                            <label for="exampleInputEmail1" class="form-label1">Enter Capacity</label>
                             <input type="text" className="form-control" placeholder='Enter Capacity' name="capacity" value={user.capacity} onChange={handleChange} />
                         </div>
                         <div className='mb-3'>

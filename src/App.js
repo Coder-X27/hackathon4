@@ -12,6 +12,8 @@ import Services from './mainpage/Services/Services'
 import About from './mainpage/About/About'
 import Contact from './mainpage/Contact/Contact'
 import Future from './mainpage/Future/Future'
+import {Admin} from './Components/admin'
+
 // import axios from 'axios';
 import {
   BrowserRouter as Router,
@@ -48,11 +50,11 @@ function App() {
               }
           </Route>
           <Route path="/login">
-            <Navbar/>
+            {/* <Navbar/> */}
             <Login setLoginUser={setLoginUser} />
           </Route>
           <Route path="/register">
-            <Navbar />
+            {/* <Navbar /> */}
             <Register />
           </Route>
           <Route path="/main">
@@ -66,6 +68,9 @@ function App() {
               <Footer />
             </div>
           </Route>
+        <Route path='/admin'>
+          <Admin/>
+        </Route>
         </Switch>
       </Router>
 
