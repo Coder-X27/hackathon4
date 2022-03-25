@@ -1,0 +1,44 @@
+.container3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.container12 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lwid {
+    width: 30%;
+}
+
+.swid {
+    width: 12%;
+}
+
+.butns {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.butns button {
+    margin: 2rem 1rem;
+    padding: 15px 10px;
+    border: 2px solid orange;
+    color: var(--white);
+    border-radius: 20px;
+    background-color: var(--blue);
+}
+
+.butns button:hover {
+    background-color: transparent;
+    color: var(--orange);
+    transition: all 0.5s ease;
+}
