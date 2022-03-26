@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from "axios"
-// import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 // import '../../Components/register/reg.css'
 import './dataentry.css'
 
@@ -32,6 +32,7 @@ export default function Dataentry() {
         } else {
             alert('Fill all data')
         }
+        history.push("/Admin")
 
 
         // .then(res => console.log(res))
@@ -39,7 +40,7 @@ export default function Dataentry() {
         /////This is to be done after making backend
 
     }
-    //   const history = useHistory()
+      const history = useHistory()
 
 
 

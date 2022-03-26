@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import Aditem from "./aditem";
+// import Aditem from "./aditem";
 import { MenuItems } from "../mainpage/Navbar/MenuItems";
 import axios from "axios";
 import Navbar from '../mainpage/Navbar/Navbar'
 import BarChart from '../Components/BarChart'
 import PieChart from '../Components/PieChart'
 import "./admin.css";
+import { useHistory } from 'react-router-dom'
+
 
 export const Admin = () => {
   const [data, setdata] = useState("");
@@ -19,24 +21,19 @@ export const Admin = () => {
   useEffect(() => {
     getData();
   }, []);
+  const history = useHistory()
+  const stats=()=>{
+    history.push("/adminstats")
+  }
   
   return (
     <div className="container3">
       <Navbar/>
       <div className="container12">
         <div className="butns">
-          <button>Statistical Form</button>
-          <button>Pictorial Form</button>
+          {/* <button>Statistical Form</button> */}
+          <button onClick={stats} >Pictorial Form</button>
         </div>
-        {/* <div className="charts">
-          <div className="barchart margincharts" style={{ width: 700 }}>
-            <BarChart chartData={'Aditem'} />
-          </div>
-          <hr />
-          <div className="piechart margincharts" style={{ width: 400 }}>
-            <PieChart chartData={Aditem} /> */}
-          {/* </div>
-        </div> */}
         <table class="table">
           <thead>
             <tr>
