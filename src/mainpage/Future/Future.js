@@ -22,7 +22,7 @@ class Future extends Component{
                             <img className="f-img" src="./fu3.gif" alt="" />
                             <h1 className="f-heading">Android</h1>
                             <p>
-To increse comfort and to take the feasibility at a higher level our website will soon becoming an Android Friendly. This will definitely gonna increase productivity as well as mobility.</p>
+                                To increse comfort and to take the feasibility at a higher level our website will soon becoming an Android Friendly. This will definitely gonna increase productivity as well as mobility.</p>
                         </div>
                         <div className="f-card">
                             <img className="f-img" src="./fu4.gif" alt="" />

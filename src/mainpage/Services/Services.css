@@ -14,7 +14,7 @@
 
 .services {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 80%;
     margin: auto;
     flex-wrap: wrap;
@@ -27,8 +27,8 @@
 }
 
 .services .services-card {
-    min-width: 330px;
-    min-height: 500px;
+    max-width: 550px;
+    min-height: 350px;
     padding: 20px 30px;
     margin: 20px auto;
     border: 2px solid var(--orange);
@@ -59,6 +59,7 @@
 .title1 {
     margin: auto;
     text-transform: uppercase;
+    font-size: 2.2rem;
 }
 
 .service-rowcards {
@@ -84,6 +85,14 @@
     }
     p {
         font-size: 1.5rem;
+    }
+    .service-rowcards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .service-rowcards .services-card {
+        width: 100%;
     }
 }
 

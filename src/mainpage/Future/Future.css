@@ -26,12 +26,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 40%;
+    max-width: 44%;
     margin: 1rem auto;
     border: 1px solid red;
     border-radius: 20px;
     padding: 20px 30px;
     box-shadow: 5px 5px 5px 0 black;
+    min-height: 490px;
 }
 
 .f-card:hover {
@@ -44,9 +45,27 @@
 }
 
 .f-img1 {
-    width: 377px
+    width: 326px
 }
 
 .f-heading {
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width:1420px) {
+    .future {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .future-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .f-card {
+        max-width: 100%;
+    }
 }

@@ -94,6 +94,7 @@
 @media screen and (max-width:1000px) {
     .NavbarItems {
         position: relative;
+        width: 100%;
     }
     .searchbar {
         display: none;

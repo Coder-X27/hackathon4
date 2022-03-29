@@ -22,7 +22,7 @@ class Footer extends Component{
                             <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
                         </div>
                     </div>
-                    <p>Copyright © 2022 Name. All rights reserved</p>
+                    <p>Copyright © 2022 PetroStats. All rights reserved</p>
                 </div>
             </div>
         )
