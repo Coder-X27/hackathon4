@@ -139,3 +139,9 @@
 .col .orword {
     font-size: 1rem;
 }
+
+@media screen and (max-width:1420px) {
+    .heading1 {
+        font-size: 1.2rem;
+    }
+}

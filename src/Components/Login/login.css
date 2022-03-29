@@ -1,9 +1,7 @@
 .container1 {
     width: 100vw;
     height: 100vh;
-    /* background-color: wheat; */
-    /* background: linear-gradient(60deg, var(--blue) 0%, var(--black) 100%); */
-    background: url(./login-background.jpeg);
+    background: url(./login-background.jpeg) no-repeat center center/cover;
     backdrop-filter: blur(20px);
 }
 
@@ -100,4 +98,16 @@
 
 .orword {
     font-size: 1rem;
+}
+
+@media screen and (max-width:1420px) {
+    .form {
+        min-width: 100%;
+    }
+    .headinglogreg {
+        font-size: 1.6rem;
+    }
+    .form h1 {
+        text-align: center;
+    }
 }

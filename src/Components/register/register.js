@@ -34,7 +34,7 @@ export default function Register() {
 
   return (
     <>
-      <div className="container1 my-5">
+      <div className="container1 ">
         <div className="loginpage">
           <div className="form">
             {console.log("User", user)}
