@@ -39,6 +39,6 @@
 
 .butns button:hover {
     background-color: transparent;
-    color: var(--orange);
+    color: var(--blue);
     transition: all 0.5s ease;
 }
