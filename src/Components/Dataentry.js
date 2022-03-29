@@ -86,7 +86,7 @@ export default function Dataentry() {
                             </select>
                         </div>
                         <div className='mb-3'>
-                            <label for="exampleInputEmail1" class="form-label1">Enter Capacity</label>
+                            <label for="exampleInputEmail1" class="form-label1">Enter Capacity (In Tons)</label>
                             <input type="text" className="form-control" placeholder='Enter Capacity' name="capacity" value={user.capacity} onChange={handleChange} />
                         </div>
                         <div className='mb-3'>

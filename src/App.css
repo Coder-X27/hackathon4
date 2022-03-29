@@ -24,3 +24,26 @@
     height: 100vh;
     background-color: wheat;
 }
+
+.headcom {
+    margin-top: 6rem;
+    text-transform: uppercase;
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.charts {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+}
