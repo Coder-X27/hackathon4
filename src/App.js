@@ -75,7 +75,7 @@ function App() {
           </Route>
 
           <Route path="/adminstats">
-            {/* <Navbar/> */}
+            <Navbar/>
             <div className="charts">
               <h1 className="headcom">Pictorial Form of Data</h1>
               <div className="cont">
